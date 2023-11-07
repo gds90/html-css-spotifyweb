@@ -201,10 +201,21 @@ nav ul {
     .col-50 {
         width: calc(100% / 4 - 10px);
     }
+    span.d-block {
+        display: inline;
+    }
+    span.autor {
+        display: block;
+    }
 }
 
 /* LARGE SCREEN  */
 @media screen and (min-width: 991px) {
-    
+    header {
+        width: calc(100vw - 175px)
+    }
+    .col-50 {
+        width: calc(100% / 6 - 10px);
+    }
 }
 

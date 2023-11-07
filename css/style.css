@@ -177,6 +177,8 @@ nav ul {
 }
 
 /* MEDIA QUERIES  */
+
+/* SMALL SCREEN  */
 @media screen and (min-width: 576px) {
     #sidebar {
         width: 200px;}
@@ -188,4 +190,21 @@ nav ul {
     }
     header {
         width: calc(100vw - 160px)
+    }
 }
+
+/* MEDIUM SCREEN  */
+@media screen and (min-width: 768px) {
+    header {
+        width: calc(100vw - 170px)
+    }
+    .col-50 {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+/* LARGE SCREEN  */
+@media screen and (min-width: 1200px) {
+
+}
+

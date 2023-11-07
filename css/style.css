@@ -112,6 +112,18 @@ header {
 .playlist-artist {
     font-size: 0.8rem;
 }
+.circle {
+    clip-path: circle();
+}
+h2 {
+    color: #fff;
+    margin-left: 5px;
+}
+
+h6  {
+    margin-left: 5px;
+    margin-top: 5px
+}
 
 
 /* PLAYER  */
@@ -136,10 +148,6 @@ header {
 .row {
     display: flex;
     width: 100%;
-}
-h2 {
-    color: #fff;
-    margin-left: 5px;
 }
 
 nav li {

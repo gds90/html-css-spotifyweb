@@ -30,9 +30,9 @@
     height: 100%;
 }
 
-.content {
+.main-content {
     width: calc(100vw - 50px);
-    background-color: red;
+    background-color: rgb(38, 41, 45);
     overflow-y: auto;
 }
 
@@ -40,13 +40,11 @@ header {
     position:fixed; 
     background-color: rgba(0,0,0,0.5); 
     height: 75px; 
-    width: 100%;
+    width: calc(100vw - 50px)
 }
 
 .music {
     margin-top: 75px;
-    background-color: aquamarine;
-    height: 100%;
 }
 
 .header-content {
@@ -55,10 +53,37 @@ header {
     width: 100%;
 }
 
+.playlist-cover {
+    background-color: yellow;
+    width: 100%;
+    height: 200px;
+}
+.playlist-name {
+    background-color: orangered;
+    width: 100%;
+    height: 25px;
+}
+.playlist-artist {
+    background-color: rgb(13, 113, 117);
+    width: 100%;
+    height: 25px;
+}
+/* SIDEBAR  */
+.sidebar-content {
+    height: 100%;
+    width: 100%;
+    align-content: space-between;
+}
+.sidebar-content .row {
+    flex-direction: column;
+}
 /* COMMON */
 .row {
     display: flex;
     width: 100%;
+}
+h2 {
+    color: #fff;
 }
 
 nav li {
@@ -86,7 +111,26 @@ nav ul {
 .align-cen {
     align-items: center;
 }
-
+.m-1 {
+    margin: 10px;
+}
+.p-1 {
+    padding: 10px;
+}
+.p-2 {
+    padding: 20px;
+}
+.p-3 {
+    padding: 30px;
+}
+/* COLUMN */
 .col-100 {
     width: 100%;
+    background-color: azure;
+}
+.col-50 {
+    width: calc(50% - 10px);
+    background-color: blue;
+    height: 250px;
+    margin: 5px;
 }

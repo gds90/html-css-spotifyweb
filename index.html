@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>Spotify Web</title>
 </head>
 <body>
@@ -18,18 +21,19 @@
                         <div class="sidebar-content d-flex wrap">
                             <div class="row">
                                 <div class="col-100">
-                                    logo
+                                    <img src="./img/logo-small.svg" alt="Spotify logo">
+                                    <img class="hidden" src="./img/logo.svg" alt="Spotify logo">
                                 </div>
                                 <div class="col-100 mt-1">
-                                    home
+                                    <span><i class="fa-sharp fa-solid fa-house"></i></span>
                                     <span class="hidden bold-white">Home</span>
                                 </div>
-                                <div class="col-100">
-                                    search
+                                <div class="col-100 mt-1">
+                                    <span><i class="fa-regular fa-magnifying-glass"></i></span>
                                     <span class="hidden">Cerca</span>
                                 </div>
-                                <div class="col-100">
-                                    library
+                                <div class="col-100 mt-1">
+                                    <span><i class="fa-regular fa-lines-leaning fa-flip-horizontal"></i></span>
                                     <span class="hidden">La tua libreria</span>
                                 </div>  
                                 <div class="hidden mt-1">
@@ -50,12 +54,12 @@
                             </div>
                             <div class="row">
                                 <div class="col-100">
-                                    [icon]
+                                    <span><i class="fa-regular fa-circle-down"></i></span>
                                     <span class="hidden">Installa app</span>
                                 </div>
-                                <div class="col-100">
-                                    user 
-                                    <span>John Doe</span>
+                                <div class="col-100 mt-1">
+                                    <img class="propic" src="./img/profile.svg" alt="">
+                                    <span class="hidden">John Doe</span>
                                 </div>
                             </div>
                         </div>

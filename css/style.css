@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* BASE LAYOUT  */
 .main-container {
     width: 100%;
@@ -75,6 +79,9 @@ header {
 #sidebar {
     width: 50px;
     background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .sidebar-content {
@@ -86,6 +93,18 @@ header {
 .sidebar-content .row {
     flex-direction: column;
 }
+
+.fa-circle-down {
+    font-size: 0.8rem;
+}
+
+.propic {
+    width: 60%;
+    background-color: gray;
+    clip-path: circle();
+    padding: 2px;
+}
+
 
 /* PLAYER  */
 #player {
@@ -171,11 +190,15 @@ nav ul {
     color: #fff;
     font-weight: 800;
 }
+.bold-grey{
+    color: rgb(119,122,126)
+    font-weight: 800;
+}
+
 
 /* COLUMN */
 .col-100 {
     width: 100%;
-    background-color: azure;
 }
 .col-50 {
     width: calc(50% - 10px);

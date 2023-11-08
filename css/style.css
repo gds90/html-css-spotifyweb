@@ -74,7 +74,6 @@ header {
     background-color: black;
     color: #fff;
     text-align: center;
-    font-size: 1.5rem;
 }
 
 .sidebar-content {
@@ -86,17 +85,35 @@ header {
 .sidebar-content .row {
     flex-direction: column;
 }
+
 .sidebar-icon {
     filter: invert(0.5);
     width: 25px;
 }
+.logo {
+    width: 70%;
+}
+ul.bold-grey li:first-child{
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+ul.bold-grey li:first-child::before{
+    content: "+";
+    padding: 3px 9px;
+    margin-right: 5px;
+    font-size: 1.4rem;
+    background-color: rgb(163,163,163);
+    color: black;
+}
+
 .download-icon {
-    width: 15px;
+    width: 12px;
     filter: invert(0.5);
 }
 
 .propic {
-    width: 60%;
+    width: 20px;
     background-color: gray;
     clip-path: circle();
     padding: 2px;
@@ -104,6 +121,11 @@ header {
 .playlist {
     height: 30vh;
     overflow-y: auto;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+.playlist ul li {
+    margin-top: 15px;
 }
 
 /* MUSIC SECTION  */
@@ -152,11 +174,14 @@ h6  {
 }
 
 .title {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+}
+.title-1 {
+    display: block;
 }
 
 .track {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin: auto 5px;
 }
 
@@ -197,7 +222,7 @@ h6  {
 }
 
 .volum {
-    width: 25px;
+    width: 25%;
     height: 2px;
     background-color: #ccc;
     border: 3px solid #ccc;
@@ -275,6 +300,9 @@ nav ul {
 .m-x-2 {
     margin: 0 20px;
 }
+.m-y-1 {
+    margin: 10px 0;
+}
 .p-1 {
     padding: 10px;
 }
@@ -312,16 +340,38 @@ nav ul {
 /* SMALL SCREEN  */
 @media screen and (min-width: 576px) {
     #sidebar {
-        width: 200px;}
+        width: 300px;
+        color: rgb(119,122,126);}
     .sidebar-content {
         padding: 5px 20px;
+        text-align: left;
+    }
+    .show {
+        display: none;
     }
     .hidden {
         display: block;
     }
     header {
-        width: calc(100vw - 160px)
+        width: calc(100vw - 210px)
     }
+    .sidebar-content .justify-cen {
+        justify-content: left;
+    }
+    .sidebar-content span {
+        display: inline;
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-left: 5px;
+    }
+    .bottom-border {
+        border-bottom: 1px solid rgb(119,122,126);
+    }
+    .title-1 {
+        display: inline;
+    }
+
+
 }
 
 /* MEDIUM SCREEN  */

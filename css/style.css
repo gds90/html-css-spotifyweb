@@ -67,6 +67,9 @@ header {
     border-radius: 25px;
     border: 1px solid #fff;
 }
+.upgrade-button button:hover {
+    transform: scale(1.05);
+}
 
 /* SIDEBAR  */
 #sidebar {

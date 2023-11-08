@@ -282,10 +282,6 @@ h6  {
     cursor: pointer;
 }
 
-.right-player {
-    position: relative;
-}
-
 .volum-bar {
     width: 100px;
     background-color: #323232;
@@ -297,6 +293,7 @@ h6  {
     width: 25%;
     border: 3px solid #ccc;
     border-radius: 10px;
+    position: relative;
 }
 .volum-slider {
     display: none;
@@ -304,8 +301,8 @@ h6  {
     position: absolute;
     border-radius: 50%;
     padding: 8px;
-    right: 75px;
-    bottom: 21px;
+    bottom: -8px;
+left: 10px;
 }
 
 .slider-progress {

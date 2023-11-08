@@ -134,6 +134,28 @@ ul.bold-grey li:first-child::before{
     text-transform: uppercase;
     font-size: 0.9rem;
 }
+.playlist-cover {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0,0,0,0.5);
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+.overlay .fa-circle-play {
+    font-size: 3rem;
+}
+
+.playlist-cover:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .playlist-cover img {
     width: 100%;

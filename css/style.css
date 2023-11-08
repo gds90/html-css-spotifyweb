@@ -377,7 +377,7 @@ nav ul {
 /* MEDIUM SCREEN  */
 @media screen and (min-width: 768px) {
     header {
-        width: calc(100vw - 170px)
+        width: calc(100vw - 230px)
     }
     .col-50 {
         width: calc(100% / 4 - 10px);
@@ -387,6 +387,12 @@ nav ul {
     }
     span.autor {
         display: block;
+    }
+    .save-track {
+        margin: 0 20px
+    }
+    .save-track span {
+        margin-right: 10px;
     }
 }
 

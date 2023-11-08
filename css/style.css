@@ -136,11 +136,13 @@ ul.bold-grey li:hover::before {
 .sidebar-content .col-100:hover, 
 .sidebar-content li:hover {
     color: #fff;
+    cursor: pointer;
 }
 
 .sidebar-content .col-100:hover .sidebar-icon,
 .sidebar-content .col-100:hover .download-icon{
     filter: invert(0);
+    cursor: pointer;
 }
 
 /* MUSIC SECTION  */
@@ -215,11 +217,20 @@ h6  {
     width: 100%;
 }
 
-.title {
-    font-size: 0.6rem;
-}
 .title-1 {
     display: block;
+}
+.title:hover span{
+    color: #fff;
+}
+.title:hover {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.save-track i:hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 .track {
@@ -250,10 +261,13 @@ h6  {
 
 .progress {
     width: 25%;
-    height: 2px;
-    background-color: #ccc;
     border: 3px solid #ccc;
     border-radius: 10px;
+    position: relative;
+}
+.volum:hover,
+.progress:hover {
+    border: 3px solid rgb(203,241,120)
 }
 
 .volum-bar {
@@ -265,11 +279,29 @@ h6  {
 
 .volum {
     width: 25%;
-    height: 2px;
-    background-color: #ccc;
     border: 3px solid #ccc;
     border-radius: 10px;
 }
+.slider {
+    display: inline;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    border-radius: 50%;
+    padding: 8px;
+    vertical-align: baseline;
+}
+.console span {
+    margin: 0 5px
+} 
+.console span:hover {
+    cursor: pointer;
+}
+.console .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
 /* COMMON */
 .height100 {
     height: 100%;

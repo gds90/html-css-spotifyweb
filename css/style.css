@@ -109,6 +109,9 @@ ul.bold-grey li:first-child::before{
     background-color: rgb(163,163,163);
     color: black;
 }
+ul.bold-grey li:hover::before {
+    background-color: #fff;
+}
 
 .download-icon {
     width: 12px;
@@ -129,6 +132,15 @@ ul.bold-grey li:first-child::before{
 }
 .playlist ul li {
     margin-top: 15px;
+}
+.sidebar-content .col-100:hover, 
+.sidebar-content li:hover {
+    color: #fff;
+}
+
+.sidebar-content .col-100:hover .sidebar-icon,
+.sidebar-content .col-100:hover .download-icon{
+    filter: invert(0);
 }
 
 /* MUSIC SECTION  */
@@ -181,6 +193,8 @@ h6  {
 .music a:hover {
     color: #fff;
 }
+
+
 
 
 /* PLAYER  */
@@ -427,7 +441,7 @@ nav ul {
 /* LARGE SCREEN  */
 @media screen and (min-width: 991px) {
     header {
-        width: calc(100vw - 250px)
+        width: calc(100vw - 260px)
     }
     .col-50 {
         width: calc(100% / 6 - 10px);

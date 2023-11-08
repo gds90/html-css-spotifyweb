@@ -246,6 +246,7 @@ h6  {
 .time {
     font-size: 0.5rem;
     margin-top: 15px;
+    position: relative;
 }
 
 .time span {
@@ -263,11 +264,26 @@ h6  {
     width: 25%;
     border: 3px solid #ccc;
     border-radius: 10px;
-    position: relative;
 }
-.volum:hover,
-.progress:hover {
-    border: 3px solid rgb(203,241,120)
+.volum-bar:hover, .progress-bar:hover {
+    cursor: pointer;
+}
+.volum-bar:hover .volum,
+.progress-bar:hover .progress{
+    border: 3px solid rgb(203,241,120);
+}
+
+.progress-bar:hover .slider-progress {
+    display: block;
+    cursor: pointer;
+}
+.volum-bar:hover .volum-slider {
+    display: block;
+    cursor: pointer;
+}
+
+.right-player {
+    position: relative;
 }
 
 .volum-bar {
@@ -282,15 +298,24 @@ h6  {
     border: 3px solid #ccc;
     border-radius: 10px;
 }
-.slider {
-    display: inline;
+.volum-slider {
+    display: none;
     background-color: #fff;
     position: absolute;
-    right:0;
-    bottom: 0;
     border-radius: 50%;
     padding: 8px;
-    vertical-align: baseline;
+    right: 75px;
+    bottom: 21px;
+}
+
+.slider-progress {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    left:160px;
+    top:-3px;
+    border-radius: 50%;
+    padding: 8px;
 }
 .console span {
     margin: 0 5px

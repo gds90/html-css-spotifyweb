@@ -16,12 +16,10 @@ body {
 
 #top {
     height: calc(100vh - 75px);
-    background-color: blue;
 }
 
 .top-content { 
     display: flex;
-    background-color: green;
     height: 100%;
 }
 
@@ -88,9 +86,13 @@ header {
 .sidebar-content .row {
     flex-direction: column;
 }
-
-.fa-circle-down {
-    font-size: 0.8rem;
+.sidebar-icon {
+    filter: invert(0.5);
+    width: 25px;
+}
+.download-icon {
+    width: 15px;
+    filter: invert(0.5);
 }
 
 .propic {
@@ -98,6 +100,10 @@ header {
     background-color: gray;
     clip-path: circle();
     padding: 2px;
+}
+.playlist {
+    height: 30vh;
+    overflow-y: auto;
 }
 
 /* MUSIC SECTION  */
@@ -131,6 +137,8 @@ h6  {
 #player {
     height: 75px;
     background-color: rgb(40,40,40);
+    position: fixed;
+    width: 100%;
 }
 
 .cover-sm {
@@ -175,6 +183,21 @@ h6  {
 
 .progress {
     width: 25%;
+    height: 2px;
+    background-color: #ccc;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+.volum-bar {
+    width: 100px;
+    background-color: #323232;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.volum {
+    width: 25px;
     height: 2px;
     background-color: #ccc;
     border: 3px solid #ccc;

@@ -40,9 +40,11 @@ body {
 }
 .playlist-name {
     width: 100%;
+    font-size: 0.8rem;
 }
 .playlist-artist {
     width: 100%;
+    font-size: 0.6rem;
 }
 /* HEADER  */
 header {
@@ -178,9 +180,6 @@ header {
 
 .playlist-cover img {
     width: 100%;
-}
-.playlist-artist {
-    font-size: 0.8rem;
 }
 .circle {
     clip-path: circle();

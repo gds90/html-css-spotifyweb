@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* BASE LAYOUT  */
@@ -67,6 +67,7 @@ header {
     margin-right: 10px;
     border-radius: 25px;
     border: 1px solid #fff;
+    margin-right: 10px;
 }
 .upgrade-button button:hover {
     transform: scale(1.05);
@@ -98,7 +99,7 @@ header {
     width: 70%;
 }
 ul.bold-grey li:first-child{
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
 }
@@ -128,7 +129,7 @@ ul.bold-grey li:hover::before {
 .playlist {
     height: 40vh;
     overflow-y: auto;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
 }
 .playlist ul li {
@@ -468,7 +469,7 @@ nav ul {
     }
     .sidebar-content span {
         display: inline;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 700;
         margin-left: 5px;
     }
@@ -507,7 +508,10 @@ nav ul {
 /* LARGE SCREEN  */
 @media screen and (min-width: 991px) {
     header {
-        width: calc(100vw - 260px)
+        width: calc(100vw - 240px)
+    }
+    .upgrade-button button{
+        margin-right: 25px;
     }
     .col-50 {
         width: calc(100% / 6 - 10px);

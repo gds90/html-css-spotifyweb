@@ -87,10 +87,6 @@ header {
     align-content: space-between;
     padding: 5px 5px;
 }
-.sidebar-content .row {
-    flex-direction: column;
-}
-
 .sidebar-icon {
     filter: invert(0.5);
     width: 25px;
@@ -132,7 +128,6 @@ header {
     height: 30vh;
     overflow-y: auto;
     font-size: 0.8rem;
-    font-weight: 700;
 }
 .playlist ul li {
     margin-top: 15px;
@@ -209,6 +204,13 @@ h6  {
     background-color: rgb(40,40,40);
     position: fixed;
     width: 100%;
+}
+.right-player {
+    color:#fff;
+    flex-direction: column-reverse;
+}
+.right-player .fa-solid {
+    margin: 3px;
 }
 
 .cover-sm {
@@ -480,6 +482,13 @@ nav ul {
     }
     .title-1 {
         display: inline;
+    }
+    .upgrade-button button{
+        margin-right: 25px;
+    }
+    .right-player {
+        color:#fff;
+        flex-direction: row;
     }
 
 

@@ -98,12 +98,11 @@ header {
 .logo {
     width: 70%;
 }
-ul.bold-grey li:first-child{
+.new-playlist {
     font-size: 1rem;
-    display: flex;
-    align-items: center;
+    margin: 20px 0;
 }
-ul.bold-grey li:first-child::before{
+.new-playlist::before{
     content: "+";
     padding: 3px 9px;
     margin-right: 5px;
@@ -111,7 +110,10 @@ ul.bold-grey li:first-child::before{
     background-color: rgb(163,163,163);
     color: black;
 }
-ul.bold-grey li:hover::before {
+.new-playlist:hover {
+    color: #fff;
+}
+.new-playlist:hover::before {
     background-color: #fff;
 }
 
@@ -127,7 +129,7 @@ ul.bold-grey li:hover::before {
     padding: 2px;
 }
 .playlist {
-    height: 40vh;
+    height: 30vh;
     overflow-y: auto;
     font-size: 0.8rem;
     font-weight: 700;

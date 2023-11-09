@@ -257,21 +257,24 @@ h6  {
     width: 80%;
     background-color: #323232;
     display: inline-block;
-    border-radius: 10px;
+    height:4px;
+    border-radius: 5px;
 }
 
 .progress {
     width: 25%;
-    border: 3px solid #ccc;
-    border-radius: 10px;
+    background-color: #ccc;
+    height: 4px;
     position: relative;
+    border-radius: 5px;
 }
 .volum-bar:hover, .progress-bar:hover {
     cursor: pointer;
 }
 .volum-bar:hover .volum,
 .progress-bar:hover .progress{
-    border: 3px solid rgb(203,241,120);
+    background-color:  rgb(203,241,120);
+    height: 4px;
 }
 
 .progress-bar:hover .slider-progress {
@@ -287,12 +290,15 @@ h6  {
     width: 100px;
     background-color: #323232;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 5px;
+    height: 4px;
 }
 
 .volum {
     width: 25%;
-    border: 3px solid #ccc;
+    background-color: #ccc;
+    border-radius: 5px;
+    height: 4px;
     border-radius: 10px;
     position: relative;
 }
@@ -301,19 +307,24 @@ h6  {
     background-color: #fff;
     position: absolute;
     border-radius: 50%;
-    padding: 8px;
-    bottom: -8px;
-left: 10px;
+    right:0;
+    top: 50%;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
 }
 
 .slider-progress {
     display: none;
     background-color: #fff;
     position: absolute;
-    right: -5px;
-    top: -8px;
+    right: 0;
+    top: 50%;
     border-radius: 50%;
-    padding: 8px;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
 }
 .console span {
     margin: 0 5px

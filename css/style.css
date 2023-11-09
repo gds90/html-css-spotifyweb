@@ -69,6 +69,7 @@ header {
     border-radius: 25px;
     border: 1px solid #fff;
     margin-right: 10px;
+    transition: 0.2s;
 }
 .upgrade-button button:hover {
     transform: scale(1.05);
@@ -88,7 +89,6 @@ header {
     height: 100%;
     width: 100%;
     align-content: space-between;
-    padding: 5px 5px;
 }
 .sidebar-icon {
     filter: invert(0.5);
@@ -271,6 +271,7 @@ h6  {
 .fa-circle-play {
     font-size: 1.6rem;
     margin: 0 5px;
+    transition: 0.2s;
 }
 
 .time {
@@ -363,6 +364,10 @@ h6  {
 }
 .console .fa-circle-play:hover {
     transform: scale(1.1);
+}
+
+.right-player span:hover {
+    cursor: pointer;
 }
 
 /* COMMON */
@@ -484,6 +489,7 @@ nav ul {
         padding: 5px 20px;
         text-align: left;
     }
+
     .show {
         display: none;
     }

@@ -16,6 +16,7 @@ body {
 
 #top {
     height: calc(100vh - 75px);
+    overflow-y: hidden;
 }
 
 .top-content { 
@@ -80,6 +81,7 @@ header {
     background-color: black;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
 .sidebar-content {
@@ -126,7 +128,7 @@ header {
     padding: 2px;
 }
 .playlist {
-    height: 30vh;
+    height: 35vh;
     overflow-y: auto;
     font-size: 0.8rem;
 }
@@ -208,6 +210,15 @@ h6  {
     position: relative;
     left:50%;
     transform: translateX(-50%);
+}
+
+.left-line {
+    width: 2px;
+    height: 30px;
+    background-color: greenyellow;
+    position: absolute;
+    left:0;
+    top:78px;
 }
 
 

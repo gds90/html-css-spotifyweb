@@ -194,8 +194,10 @@ h6  {
 .music a:hover {
     color: #fff;
 }
-
-
+.playlist-artist:hover, .playlist-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 /* PLAYER  */
@@ -451,6 +453,7 @@ nav ul {
 /* MEDIA QUERIES  */
 
 /* SMALL SCREEN  */
+
 @media screen and (min-width: 576px) {
     #sidebar {
         width: 300px;

@@ -71,6 +71,7 @@ header {
 }
 .upgrade-button button:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* SIDEBAR  */
@@ -197,6 +198,16 @@ h6  {
 .playlist-artist:hover, .playlist-name:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+.bottom-line {
+    display: flex;
+    text-align: center;
+    height: 2px;
+    background-color: greenyellow;
+    width: 30px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
 }
 
 
